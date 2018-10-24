@@ -22,6 +22,7 @@
               @compositionend.native="handleComposition"
               @keyup.enter.native="handleKeyup"
               :placeholder="inputPlaceholder"
+              :type="inputType"
               ref="input"></el-input>
             <div class="el-message-box__errormsg" :style="{ visibility: !!editorErrorMessage ? 'visible' : 'hidden' }">{{ editorErrorMessage }}</div>
           </div>
@@ -241,6 +242,7 @@
         inputPlaceholder: '',
         inputPattern: null,
         inputValidator: null,
+        inputType: 'text',
         inputErrorMessage: '',
         showConfirmButton: true,
         showCancelButton: false,

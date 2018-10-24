@@ -13,6 +13,7 @@ const defaults = {
   inputPattern: null,
   inputValidator: null,
   inputErrorMessage: '',
+  inputType: 'text',
   showConfirmButton: true,
   showCancelButton: false,
   confirmButtonPosition: 'right',
